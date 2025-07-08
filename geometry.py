@@ -23,17 +23,7 @@ class point:
 		nvector = vector(sx, sy, sz)
 
 		return(nvector)
-
-	def draw(self):
-		return(self.x, self.y, self.z)
-
-class vector:
-
-	def __init__(self, xf, yf, zf):
-		self.xf = xf
-		self.yf = yf
-		self.zf = zf
-
+	
 	def sum_vector_to_point(self, x1f, y1f, z1f):
 		sxf = self.xf+x1f
 		syf = self.yf+y1f
@@ -49,7 +39,16 @@ class vector:
 		npoint = point(sxf, syf, szf)
 		
 		return(npoint)
-	
+
+	def draw(self):
+		return(self.x, self.y, self.z)
+
+class vector:
+
+	def __init__(self, xf, yf, zf):
+		self.xf = xf
+		self.yf = yf
+		self.zf = zf
 	
 	def sum_vector_to_vector(self, x1f, y1f, z1f):
 		sxf = self.xf+x1f
