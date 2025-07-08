@@ -42,6 +42,14 @@ class vector:
 		
 		return(npoint)
 	
+	def dev_vector_to_point(self, x1f, y1f, z1f):
+		sxf = self.xf-x1f
+		syf = self.yf-y1f
+		szf = self.zf-z1f
+		npoint = point(sxf, syf, szf)
+		
+		return(npoint)
+	
 	
 	def sum_vector_to_vector(self, x1f, y1f, z1f):
 		sxf = self.xf+x1f
